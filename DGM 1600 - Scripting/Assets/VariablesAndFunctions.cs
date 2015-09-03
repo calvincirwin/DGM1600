@@ -15,4 +15,5 @@ public class VariablesAndFunctions : MonoBehaviour {
 	void Update () {
 	
 	}
+	int MyltiplyByTwo(int number){
 }
