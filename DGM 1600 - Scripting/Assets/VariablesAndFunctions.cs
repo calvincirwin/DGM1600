@@ -1,19 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class VariablesAndFunctions : MonoBehaviour {
+public class VariablesAndFunctions : MonoBehaviour 
+{
 	int myInt = 5;
-	
-	// Use this for initialization
-	void Start () 
+	void Start()
 	{
-		myInt = 55;
-		Debug.Log (myInt*2);
+		myInt = MultiplyByTwo (myInt);
+		Debug.Log (myInt);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	int MultiplyByTwo (int number)
+	{
+		int ret;
+		ret = number * 2;
+		return ret;
+
 	}
-	int MyltiplyByTwo(int number){
+
 }
