@@ -1,15 +1,42 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class IfStatements : MonoBehaviour 
+public class IfStatements : MonoBehaviour
 {
-	public float coffeeTemperature = 85.0f;
-	public float hotLimitTemperature = 70.0f;
-	public float coldLimitTemperature = 40.0f;
+	public float age = 0f;
+	public float adult = 21f;
+	public float seniorCitizen = 65f;
 
-
-	void Update ()
+	
+	
+	
+	void Update()
 	{
-		if(Input.GetKeyDown(KeyCode.Space))
+		if (Input.GetKeyDown (KeyCode.Space))
+			ageChange ();
+
+		age += Time.deltaTime * 5f;
 	}
+	void ageChange ()
+		{
+			// If the coffee's temperature is greater than the hottest drinking temperature...
+			if(age > 65)
+			{
+				// ... do this.
+				print("You are a senior citizen");
+			}
+			// If it isn't, but the coffee temperature is less than the coldest drinking temperature...
+			else if(age >= 21)
+			{
+				// ... do this.
+				print("You are an adult.");
+			}
+			// If it is neither of those then...
+			else
+			{
+				// ... do this.
+				print("You are not yet a legal adult");
+			}
+	}
+
 }
