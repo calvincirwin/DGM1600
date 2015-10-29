@@ -20,22 +20,22 @@ public class IfStatements : MonoBehaviour
 	void ageChange ()
 		{
 			// If the coffee's temperature is greater than the hottest drinking temperature...
-			if(age > 65)
+			if(age < 21)
 			{
 				// ... do this.
-				print("You are a senior citizen");
+				print("You are not a legal adult");
 			}
 			// If it isn't, but the coffee temperature is less than the coldest drinking temperature...
-			else if(age >= 21)
+			else if(age > 65)
 			{
 				// ... do this.
-				print("You are an adult.");
+				print("You are a Senior Citizen.");
 			}
 			// If it is neither of those then...
 			else
 			{
 				// ... do this.
-				print("You are not yet a legal adult");
+				print("You are an adult");
 			}
 	}
 
